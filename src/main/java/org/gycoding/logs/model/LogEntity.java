@@ -22,6 +22,10 @@ public class LogEntity {
         );
     }
 
+    /**
+     * Convert the log entity to a JSON string.
+     * @return JSON string representation of the log entity.
+     */
     public String toJSON() {
         return String.format(
                 "{\"id\":\"%s\", \"message\":\"%s\", \"level\":\"%s\", \"origin\":\"%s\", \"timestamp\":\"%s\"}",
