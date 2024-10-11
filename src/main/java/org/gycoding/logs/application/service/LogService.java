@@ -15,7 +15,7 @@ public class LogService {
     private static String collectionName;
     private static String origin;
 
-    @Value("${gy.logs.collection.name}")
+    @Value("${gy.logs.mongodb.collection}")
     private String collectionNameProp;
 
     @Value("${gy.logs.origin}")
