@@ -8,18 +8,17 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class LogService {
-    private static final MongoTemplate mongoTemplate = null;
-    private static final String collectionName = null;
-    private static final String origin = null;
+    private static MongoTemplate mongoTemplate;
+
+    @Value("${gy.logs.collection.name}")
+    private static String collectionName;
+
+    @Value("${gy.logs.origin}")
+    private static String origin;
 
     @Autowired
-    public LogService(
-            MongoTemplate mongoTemplate,
-            @Value("${gy.logs.collection.name}") String collectionName,
-            @Value("${gy.logs.origin}") String origin
-    ) {
-        mongoTemplate = mongoTemplate;
-        collectionName = collectionName;
+    public LogService(MongoTemplate mongoTemplate) {
+        LogService.mongoTemplate = mongoTemplate;
     }
 
     public static void log(LogEntity logEntity) {
