@@ -17,6 +17,13 @@
         </repository>
         <repository>
           <id>github</id>
+          <url>https://maven.pkg.github.com/GY-CODING/spring-exceptions</url>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+        <repository>
+          <id>github</id>
           <url>https://maven.pkg.github.com/GY-CODING/spring-logs</url>
           <snapshots>
             <enabled>true</enabled>
