@@ -13,8 +13,7 @@ public class MongoConfig {
     @Value("${spring.data.mongodb.uri}")
     private String mongoUri;
 
-    @Value("${gy.logs.mongodb.database}:GYLogs")
-    private String databaseName;
+    private final String databaseName = "GYLogs";
 
     @Bean
     public MongoClient mongoClient() {

@@ -1,6 +1,6 @@
 # Spring Logs
 
-![version](https://img.shields.io/badge/version-1.1.0-gold?style=for-the-badge)
+![version](https://img.shields.io/badge/version-1.1.1-gold?style=for-the-badge)
 [![developer](https://img.shields.io/badge/developed-GYCODING-B833FF?style=for-the-badge)](https://gycoding.com)
 
 <br>
