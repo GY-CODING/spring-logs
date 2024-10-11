@@ -10,10 +10,10 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 @Configuration
 public class MongoConfig {
 
-    @Value("${gy.logs.mongodb.uri}")
+    @Value("${spring.data.mongodb.uri}")
     private String mongoUri;
 
-    @Value("${gy.logs.mongodb.database}")
+    @Value("${gy.logs.mongodb.database}:GYLogs")
     private String databaseName;
 
     @Bean
