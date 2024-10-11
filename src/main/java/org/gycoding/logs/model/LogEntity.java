@@ -1,13 +1,18 @@
 package org.gycoding.logs.model;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 @Builder
 @Setter
 @Getter
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Document
 public class LogEntity {
+    @Id
     private String id;
     private String message;
     private LogLevel level;

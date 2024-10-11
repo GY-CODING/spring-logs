@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;
 
+import java.util.UUID;
+
 @Service
 public class LogService {
     private static MongoTemplate mongoTemplate;
@@ -31,6 +33,7 @@ public class LogService {
     }
 
     public static void log(LogEntity logEntity) {
+        logEntity.setId(UUID.randomUUID().toString());
         logEntity.setOrigin(origin);
         System.out.println(logEntity.toString());
         mongoTemplate.save(logEntity.toJSON(), collectionName);
