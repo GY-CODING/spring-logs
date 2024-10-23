@@ -3,6 +3,7 @@ package org.gycoding.logs.application.service;
 import jakarta.annotation.PostConstruct;
 import org.gycoding.logs.model.LogEntity;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;
@@ -22,7 +23,7 @@ public class LogService {
     private String originProp;
 
     @Autowired
-    public LogService(MongoTemplate mongoTemplate) {
+    public LogService(@Qualifier("logsMongoTemplate") MongoTemplate mongoTemplate) {
         LogService.mongoTemplate = mongoTemplate;
     }
 
