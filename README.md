@@ -1,3 +1,8 @@
+> [!CAUTION]
+> This package is currently deprecated.
+
+<br>
+
 # Spring Logs
 
 ![version](https://img.shields.io/badge/version-1.1.1-gold?style=for-the-badge)
