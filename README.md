@@ -1,11 +1,6 @@
-> [!CAUTION]
-> This package is currently deprecated.
-
-<br>
-
 # Spring Logs
 
-![version](https://img.shields.io/badge/version-1.1.1-gold?style=for-the-badge)
+![version](https://img.shields.io/badge/version-1.0.0-gold?style=for-the-badge)
 [![developer](https://img.shields.io/badge/developed-GYCODING-B833FF?style=for-the-badge)](https://gycoding.com)
 
 <br>
@@ -32,4 +27,4 @@ This package has been developed using just Spring Boot and Java, and deployed us
 
 <br>
 
-<pre align="center">GYCODING 2024</pre>
+<pre align="center">GYCODING 2025</pre>
